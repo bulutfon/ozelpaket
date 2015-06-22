@@ -1,0 +1,80 @@
+%header
+  .container
+    .row.hero-unit
+      .col-sm-3.col-sm-offset-1.shape
+        = image_tag 'shape.png'
+      .col-sm-7.texts
+        %h1
+          AVUKATLARA ÖZEL
+          %br/
+          %strong
+            TEKNOLOJİ PAKETİ
+        %h2
+          ₺400 değerinde indirim paketiyle,
+          %br/
+          teknolojinin rahatlıyla tanışın.
+
+#bundles.container
+  .row
+    .col-sm-12
+      .brands
+        .brand.hvr-float
+          .bulutfon.offer
+            = link_to 'https://www.bulutfon.com', target: '_blank' do
+              = image_tag 'bulutfon-logo.png'
+            %h1
+              Yeni üyelere ₺50
+              %br/
+              konuşma kredisi.
+          .information
+            %h2 BULUTFON
+            %p
+              Bulutfon ile telefon santrali, faks, sms, görüşmelerin kayıt altına alınması gibi her türlü ihtiyacınızı
+              ₺29/ay gibi fiyatlarla karşılıyoruz.
+        .brand.hvr-float
+          .hizli-ceviri.offer
+            = link_to 'https://hizliceviri.com', target: '_blank' do
+              = image_tag 'hizliceviri-logo.png'
+            %h1
+              1 ay boyunca
+              %br/
+              \%50 indirim.
+          .information
+            %h2 HIZLIÇEVİRİ
+            %p
+              B130 dan fazla yeminli tercüman ekibi ile dosyalarınızı online ortamda
+              tercüme eder ve anında size teslim eder.
+        .brand.hvr-float
+          .lawoud.offer
+            = link_to 'https://www.lawoud.com', target: '_blank' do
+              = image_tag 'lawoud-logo.png'
+            %h1 2 Ay ücretsiz!
+          .information
+            %h2 LAWOUD
+            %p
+              Lawoud ile müvekkillerinize ve borçlularınıza kredi kartı ile ödeme yapma kolaylığı sağlayın.
+
+#social.container
+  .row
+    .col-sm-10.col-sm-offset-1
+      .panel.panel-default
+        .panel-body
+          .row
+            .col-sm-6
+              %h3 Bu sayfayı arkadaşlarınızla paylaşın
+            .col-sm-2.text-center
+              %h3 → → →
+            .col-sm-4.text-right
+              %i.fa.fa-twitter-square.fa-4x
+              %i.fa.fa-facebook-square.fa-4x
+              %i.fa.fa-linkedin-square.fa-4x
+              %i.fa.fa-envelope-square.fa-4x
+
+%footer.container
+  .row
+    .col-sm-10.col-sm-offset-1.text-center
+      %h1 AVUKATLARA ÖZEL TEKNOLOJİ PAKETİ
+      %h4 ₺400 değerinde indirim paketiyle, teknolojinin rahatlıyla tanışın.
+      %p
+        &copy; 2015 -
+        www.ozelpaket.com

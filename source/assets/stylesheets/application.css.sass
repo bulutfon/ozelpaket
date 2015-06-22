@@ -1,0 +1,102 @@
+// Import Compass
+@import "compass"
+
+// Import Twitter Bootstrap
+@import "bootstrap-sprockets"
+@import "bootstrap"
+
+//Vendor
+@import "hover-min"
+
+// Retina background images
+=at2x($path, $ext: "jpg", $w: auto, $h: auto)
+  background-image: url($path + "." + $ext)
+  $at2x_path: $path + "@2x" + "." + $ext
+  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5)
+    background-image: url($at2x_path)
+    @if $w == cover
+      +background-size($w)
+    @else if $w != auto or $h!=auto
+      +background-size($w $h)
+
+body
+  color: #34495E
+
+header
+  background-color: #F2F2F2
+  border-bottom: 1px solid #C2C2C2
+  padding: 30px 0 0 0
+  .hero-unit
+    .shape
+      img
+        width: 300px
+        height: 290px
+        position: relative
+        top: 10px
+    .texts
+      padding-left: 100px
+      h1, h2
+        letter-spacing: 3px
+      h1
+        font-weight: 400
+        margin-top: 60px
+        line-height: 50px
+      h2
+        font:
+          size: 26px
+          weight: 100
+        line-height: 30px
+
+#bundles
+  margin-top: 80px
+  .brands
+    text-align: center
+    width: 100%
+    .brand
+      position: relative
+      overflow: hidden
+      padding-top: 20px
+      background-color: #FBFBFB
+      +border-radius(5px)
+      border: 1px solid #34495E
+      display: inline-block
+      width: 361px
+      margin: 0 5px
+      .offer
+        text-align: center
+        height: 200px
+        padding: 0px 30px
+        letter-spacing: 2px
+        &.hizli-ceviri
+          padding-top: 30px
+        h1
+          font:
+            size: 26px
+            weight: 100
+          color: #8a8a8a
+      .information
+        text-align: left
+        padding: 40px
+        height: 200px
+        width: 100%
+        background-color: #34495E
+        margin-bottom: 0
+        color: white
+        h2
+          margin-top: 0
+          letter-spacing: 2px
+          font:
+            weight: 300
+            size: 22px
+        p
+          font-weight: 100
+          letter-spacing: 2px
+          font-size: 16px
+
+#social
+  margin-top: 80px
+  h3
+    margin-top: 15px
+
+footer
+  margin: 50px 0 80px 0
