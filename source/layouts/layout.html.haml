@@ -10,19 +10,24 @@
     %title= current_page.data.title || 'Özel Paket'
 
     = stylesheet_link_tag 'application',
-                      '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css',
-                      '//fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,500,700,900'
+                          '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css',
+                          '//fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,500,700,900'
+
+    %link{rel:'icon', href:'favicon.ico', type:'image/x-icon'}/
+
+    =javascript_include_tag 'vendor/modernizr-2.8.3.min.js'
 
     = yield_content :head
 
   %body{class: page_classes}
 
+    /[if lt IE 8]
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+
+    = partial 'partials/header'
+
     = yield
 
-    = javascript_include_tag  'application',
-                               '//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'
-    :javascript
-      //Fallback to loading jQuery from a local path if the CDN is unavailable
-      window.jQuery || document.write('<script src="assets/javascripts/vendor/jquery-1.11.3.min.js"><\/script>')
+    = partial 'partials/footer'
 
-    = yield_content :foot
+

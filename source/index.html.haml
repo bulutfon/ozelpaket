@@ -1,58 +1,79 @@
-%header
-  .container
-    .row.hero-unit
-      .col-sm-3.col-sm-offset-1.shape
-        = image_tag 'shape.png'
-      .col-sm-7.texts
-        %h1
-          AVUKATLARA ÖZEL
-          %br/
-          %strong
-            TEKNOLOJİ PAKETİ
-        %h2
-          ₺400 değerinde indirim paketiyle,
-          %br/
-          teknolojinin rahatlıyla tanışın.
 
-#bundles.container
-  .row
-    .col-sm-12
-      .brands
-        .brand.hvr-float
-          .bulutfon.offer
-            = link_to 'https://www.bulutfon.com', target: '_blank' do
-              = image_tag 'bulutfon-logo.png'
+%header.header.mb-80
+  .container
+    .row
+      .col-lg-12
+        .col-lg-offset-1.pull-left
+          = image_tag 'shape.png', class:'img-responsive img-hero'
+        .col-lg-7
+          .col-lg-offset-2.pull-left.txt-hero
             %h1
-              Yeni üyelere ₺50
+              AVUKATLARA ÖZEL
               %br/
-              konuşma kredisi.
-          .information
-            %h2 BULUTFON
-            %p
-              Bulutfon ile telefon santrali, faks, sms, görüşmelerin kayıt altına alınması gibi her türlü ihtiyacınızı
-              ₺29/ay gibi fiyatlarla karşılıyoruz.
-        .brand.hvr-float
-          .hizli-ceviri.offer
-            = link_to 'https://hizliceviri.com', target: '_blank' do
-              = image_tag 'hizliceviri-logo.png'
-            %h1
-              1 ay boyunca
+              %strong
+                TEKNOLOJİ PAKETİ
+            %h2
+              ₺400 değerinde indirim paketiyle,
               %br/
-              \%50 indirim.
-          .information
-            %h2 HIZLIÇEVİRİ
-            %p
-              130 dan fazla yeminli tercüman ekibi ile dosyalarınızı online ortamda
-              tercüme eder ve anında size teslim eder.
-        .brand.hvr-float
-          .lawoud.offer
-            = link_to 'https://www.lawoud.com', target: '_blank' do
-              = image_tag 'lawoud-logo.png'
-            %h1 2 Ay ücretsiz!
-          .information
-            %h2 LAWOUD
-            %p
-              Lawoud ile müvekkillerinize ve borçlularınıza kredi kartı ile ödeme yapma kolaylığı sağlayın.
+              teknolojinin rahatlıyla tanışın.
+
+%section
+  .container
+    .row
+      .col-lg-4
+        .thumbnail
+          =link_to 'https://www.bulutfon.com', target: '_blank', class:'text-center brand-offer bulutfon' do
+            =image_tag 'bulutfon-logo.png'
+            .brand-info
+              %h3.brand-info-title
+                BULUTFON
+              %p.brand-dec
+                Bulutfon ile telefon santrali, faks, sms, görüşmelerin kayıt altına alınması gibi her türlü ihtiyacınızı
+                ₺29/ay gibi fiyatlarla karşılıyoruz.
+              %small.brand-link
+                Icerige goz at
+                %i.fa.fa-angle-double-right
+            .caption.brand-cap
+              %h3.brand-title
+                Yeni üyelere ₺50
+                %br/
+                konuşma kredisi.
+
+
+      .col-lg-4
+        .thumbnail
+          =link_to 'https://hizliceviri.com', target: '_blank', class:'text-center brand-offer hizli-ceviri' do
+            =image_tag 'hizliceviri-logo.png'
+            .brand-info
+              %h3.brand-info-title
+                HIZLIÇEVİRİ
+              %p.brand-dec
+                130 dan fazla yeminli tercüman ekibi ile dosyalarınızı online ortamda
+                tercüme eder ve anında size teslim eder.
+              %small.brand-link
+                Icerige goz at
+                %i.fa.fa-angle-double-right
+            .caption.brand-cap
+              %h3.brand-title
+                1 ay boyunca
+                %br/
+                \%50 indirim.
+
+      .col-lg-4
+        .thumbnail
+          =link_to 'https://www.lawoud.com', target: '_blank', class:'text-center brand-offer lawoud' do
+            =image_tag 'lawoud-logo.png'
+            .brand-info
+              %h3.brand-info-title
+                LAWOUD
+              %p.brand-dec
+                Lawoud ile müvekkillerinize ve borçlularınıza kredi kartı ile ödeme yapma kolaylığı sağlayın.
+              %small.brand-link
+                Icerige goz at
+                %i.fa.fa-angle-double-right
+            .caption.brand-cap
+              %h3.brand-title
+                2 Ay ücretsiz!
 
 #social.container
   .row
