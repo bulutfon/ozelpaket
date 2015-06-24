@@ -1,0 +1,104 @@
+//
+// Home Page
+// --------------------------------------------------
+
+
+.brand-offer
+  position: relative
+  @extend %full-width
+  min-height: 250px
+  padding-top: 20px
+  letter-spacing: 2px
+  overflow: hidden
+  &:hover
+    .brand-info
+      +opacity(1)
+      +transform(translateY(0))
+      +transform-origin(center)
+      +transition(opacity, .28s, linear, transform, .28s, ease-out)
+
+.hizli-ceviri
+  padding-top: 30px
+
+.brand-info
+  position: absolute
+  top: 0
+  left: 0
+  @extend %full-width
+  height: 100%
+  padding: 40px
+  background-color: #34495E
+  color: white
+  text-align: left
+  +opacity(0)
+  +transform(translateY(-100px))
+  +transform-origin(center)
+  +transition(opacity, .28s, linear, transform, .28s, ease-in)
+
+.brand-info-touch
+  position: relative
+  padding: 10px 40px 0 40px
+  background-color: #fff
+  font-size: $font-size-h4
+  font-weight: 400
+  color: #8a8a8a
+  text-align: center
+  +opacity(1)
+  +transform(translateY(0))
+  +transition(none)
+  & .brand-link
+    display: none
+
+.brand-info-title
+  letter-spacing: 2px
+  font-weight: 300
+
+.brand-dec
+  font-weight: 100
+  letter-spacing: 2px
+
+.brand-link
+  position: absolute
+  bottom: 0
+  left: 0
+  @extend %full-width
+  padding: $padding-large-vertical $padding-large-horizontal
+  background-color: $brand-success
+
+.hero-img
+  position: relative
+
+.well
+  @extend %full-width
+
+@media (max-width: $screen-xs-max)
+  .txt-hero
+    text-align: center
+  .brand-dec,
+  .brand-title
+    font-weight: 400
+  .brand-cap
+    background-color: $brand-success
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max)
+  .brand-dec,
+  .brand-title
+    font-weight: 400
+  .brand-cap
+    background-color: $brand-success
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max)
+  .brand-dec,
+  .brand-title
+    font-weight: 400
+  .social-icons
+    float: right
+  .brand-cap
+    background-color: $brand-success
+
+@media (min-width: $screen-lg-min)
+  .social-icons
+    float: right
+  .brand-title
+    font-weight: 100
+    color: #8a8a8a

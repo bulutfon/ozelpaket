@@ -1,80 +1,74 @@
-%header
+
+%section
   .container
-    .row.hero-unit
-      .col-sm-3.col-sm-offset-1.shape
-        = image_tag 'shape.png'
-      .col-sm-7.texts
-        %h1
-          AVUKATLARA ÖZEL
-          %br/
-          %strong
-            TEKNOLOJİ PAKETİ
-        %h2
-          ₺400 değerinde indirim paketiyle,
-          %br/
-          teknolojinin rahatlıyla tanışın.
+    .row
+      .col-xs-12.col-sm-4.col-lg-4
+        .thumbnail
+          =link_to 'https://www.bulutfon.com', target: '_blank', class:'text-center brand-offer bulutfon' do
+            =image_tag 'bulutfon-logo.png'
+            .brand-info
+              %h3.brand-info-title.hidden-xs.hidden-sm.hidden-md
+                BULUTFON
+              %p.brand-dec
+                Bulutfon ile telefon santrali, faks, sms, görüşmelerin kayıt altına alınması gibi her türlü ihtiyacınızı
+                ₺29/ay gibi fiyatlarla karşılıyoruz.
+              %small.brand-link
+                Icerige goz at
+                %i.fa.fa-angle-double-right
+            .caption.brand-cap
+              %h3.brand-title
+                Yeni üyelere ₺50
+                %br/
+                konuşma kredisi.
 
-#bundles.container
-  .row
-    .col-sm-12
-      .brands
-        .brand.hvr-float
-          .bulutfon.offer
-            = link_to 'https://www.bulutfon.com', target: '_blank' do
-              = image_tag 'bulutfon-logo.png'
-            %h1
-              Yeni üyelere ₺50
-              %br/
-              konuşma kredisi.
-          .information
-            %h2 BULUTFON
-            %p
-              Bulutfon ile telefon santrali, faks, sms, görüşmelerin kayıt altına alınması gibi her türlü ihtiyacınızı
-              ₺29/ay gibi fiyatlarla karşılıyoruz.
-        .brand.hvr-float
-          .hizli-ceviri.offer
-            = link_to 'https://hizliceviri.com', target: '_blank' do
-              = image_tag 'hizliceviri-logo.png'
-            %h1
-              1 ay boyunca
-              %br/
-              \%50 indirim.
-          .information
-            %h2 HIZLIÇEVİRİ
-            %p
-              130 dan fazla yeminli tercüman ekibi ile dosyalarınızı online ortamda
-              tercüme eder ve anında size teslim eder.
-        .brand.hvr-float
-          .lawoud.offer
-            = link_to 'https://www.lawoud.com', target: '_blank' do
-              = image_tag 'lawoud-logo.png'
-            %h1 2 Ay ücretsiz!
-          .information
-            %h2 LAWOUD
-            %p
-              Lawoud ile müvekkillerinize ve borçlularınıza kredi kartı ile ödeme yapma kolaylığı sağlayın.
+      .col-xs-12.col-sm-4.col-lg-4
+        .thumbnail
+          =link_to 'https://hizliceviri.com', target: '_blank', class:'text-center brand-offer hizli-ceviri' do
+            =image_tag 'hizliceviri-logo.png'
+            .brand-info
+              %h3.brand-info-title.hidden-xs.hidden-sm.hidden-md
+                HIZLIÇEVİRİ
+              %p.brand-dec
+                130 dan fazla yeminli tercüman ekibi ile dosyalarınızı online ortamda
+                tercüme eder ve anında size teslim eder.
+              %small.brand-link
+                Icerige goz at
+                %i.fa.fa-angle-double-right
+            .caption.brand-cap
+              %h3.brand-title
+                1 ay boyunca
+                %br/
+                \%50 indirim.
 
-#social.container
-  .row
-    .col-sm-10.col-sm-offset-1
-      .panel.panel-default
-        .panel-body
-          .row
-            .col-sm-6
-              %h3 Bu sayfayı arkadaşlarınızla paylaşın
-            .col-sm-2.text-center
-              %h3 → → →
-            .col-sm-4.text-right
+      .col-xs-12.col-sm-4.col-lg-4
+        .thumbnail
+          =link_to 'https://www.lawoud.com', target: '_blank', class:'text-center brand-offer lawoud' do
+            =image_tag 'lawoud-logo.png'
+            .brand-info
+              %h3.brand-info-title.hidden-xs.hidden-sm.hidden-md
+                LAWOUD
+              %p.brand-dec
+                Lawoud ile müvekkillerinize ve borçlularınıza kredi kartı ile ödeme yapma kolaylığı sağlayın.
+              %small.brand-link
+                Icerige goz at
+                %i.fa.fa-angle-double-right
+            .caption.brand-cap
+              %h3.brand-title
+                2 Ay ücretsiz!
+
+%section
+  .container
+    .row
+      .col-xs-12.col-sm-12.col-md-12.col-lg-12
+        .well
+          .col-xs-12.col-md-6.col-lg-6
+            %h3 Bu sayfayı arkadaşlarınızla paylaşın
+          .col-lg-2.col-md-2.hidden-xs
+            %h3 → → →
+          .col-xs-12.col-md-4.col-lg-4
+            .social-icons
               %i.fa.fa-twitter-square.fa-4x
               %i.fa.fa-facebook-square.fa-4x
               %i.fa.fa-linkedin-square.fa-4x
               %i.fa.fa-envelope-square.fa-4x
 
-%footer.container
-  .row
-    .col-sm-10.col-sm-offset-1.text-center
-      %h1 AVUKATLARA ÖZEL TEKNOLOJİ PAKETİ
-      %h4 ₺400 değerinde indirim paketiyle, teknolojinin rahatlıyla tanışın.
-      %p
-        &copy; 2015 -
-        www.ozelpaket.com
