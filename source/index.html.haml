@@ -2,7 +2,7 @@
 %section
   .container
     .row
-      .col-xs-12.col-sm-4.col-lg-4
+      .col-xs-12.col-sm-4.col-lg-4.mb-30
         .thumbnail
           =link_to 'https://www.bulutfon.com', target: '_blank', class:'text-center brand-offer bulutfon' do
             =image_tag 'bulutfon-logo.png'
@@ -59,16 +59,21 @@
 %section
   .container
     .row
-      .col-xs-12.col-sm-12.col-md-12.col-lg-12
+      .col-xs-12.col-sm-12.col-md-12.col-lg-12.mb-30
         .well
           .col-xs-12.col-md-6.col-lg-6
             %h3 Bu sayfayı arkadaşlarınızla paylaşın
           .col-lg-2.col-md-2.hidden-xs
-            %h3 → → →
+            -4.times do
+              %i.fa.fa-angle-right.fa-4x
           .col-xs-12.col-md-4.col-lg-4
             .social-icons
-              %i.fa.fa-twitter-square.fa-4x
-              %i.fa.fa-facebook-square.fa-4x
-              %i.fa.fa-linkedin-square.fa-4x
-              %i.fa.fa-envelope-square.fa-4x
+              =link_to 'http://twitter.com/home?status=Avukatlara Ozel Paket+http://avukatlara.ozelpaket.net', target:'_blank' do
+                %i.fa.fa-twitter-square.fa-4x
+              =link_to 'https://www.facebook.com/sharer/sharer.php?u=http://avukatlara.ozelpaket.net', target:'_blank' do
+                %i.fa.fa-facebook-square.fa-4x
+              =link_to 'http://www.linkedin.com/shareArticle?mini=true&url=http://avukatlara.ozelpaket.net/&title=Avukatlara Ozel Paket&source=http://avukatlara.ozelpaket.net/', target:'_blank' do
+                %i.fa.fa-linkedin-square.fa-4x
+              =link_to 'mailto:arkadasinizin@email-adresi.com?subject=Avukatlara Ozel Paket', target:'_blank' do
+                %i.fa.fa-envelope-square.fa-4x
 
