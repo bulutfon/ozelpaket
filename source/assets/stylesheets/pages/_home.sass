@@ -15,14 +15,10 @@
       +opacity(1)
       +transform(translateY(0))
       +transform-origin(center)
-      +transition(opacity, .28s, linear, transform, .28s, ease-in)
+      +transition(opacity, .28s, linear, transform, .28s, ease-out)
 
 .hizli-ceviri
   padding-top: 30px
-
-.brand-title
-  font-weight: 100
-  color: #8a8a8a
 
 .brand-info
   position: absolute
@@ -49,6 +45,7 @@
   text-align: center
   +opacity(1)
   +transform(translateY(0))
+  +transition(none)
   & .brand-link
     display: none
 
@@ -68,11 +65,40 @@
   padding: $padding-large-vertical $padding-large-horizontal
   background-color: $brand-success
 
-#social
-  margin-top: 80px
-  h3
-    margin-top: 15px
-
 .hero-img
   position: relative
 
+.well
+  @extend %full-width
+
+@media (max-width: $screen-xs-max)
+  .txt-hero
+    text-align: center
+  .brand-dec,
+  .brand-title
+    font-weight: 400
+  .brand-cap
+    background-color: $brand-success
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max)
+  .brand-dec,
+  .brand-title
+    font-weight: 400
+  .brand-cap
+    background-color: $brand-success
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max)
+  .brand-dec,
+  .brand-title
+    font-weight: 400
+  .social-icons
+    float: right
+  .brand-cap
+    background-color: $brand-success
+
+@media (min-width: $screen-lg-min)
+  .social-icons
+    float: right
+  .brand-title
+    font-weight: 100
+    color: #8a8a8a
