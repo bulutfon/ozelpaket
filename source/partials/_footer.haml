@@ -7,6 +7,7 @@
         %p
           &copy; 2015 -
           www.ozelpaket.com
+//Facebook
 #fb-root
 :javascript
   (function(d, s, id) {
@@ -16,6 +17,9 @@
     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
+
+//Gplus
+%script{async: '', defer: '', src: 'https://apis.google.com/js/platform.js'} {lang: 'tr'}
 
 //Google Analytics
 :javascript

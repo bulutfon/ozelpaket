@@ -80,9 +80,6 @@
   border-right: 1px solid #689847
   text-shadow: 0 1px 1px rgba(0,0,0,0.24)
 
-.hero-img
-  position: relative
-
 .social-bar
   @extend %full-width
   padding: 20px
@@ -95,6 +92,9 @@
       +transition(color, .28s, ease-out)
       &:hover
         +transition(color, .28s, ease-in)
+  & .fb
+    position: relative
+    top: -5px
 
 @media (max-width: $screen-xs-max)
   .img-hero
