@@ -2,6 +2,11 @@
 // Home Page
 // --------------------------------------------------
 
+.section-brands
+  @extend %full-width
+
+.section-social-bar
+  @extend %full-width
 
 .brand-offer
   position: relative
@@ -34,6 +39,7 @@
   +transform(translateY(-100px))
   +transform-origin(center)
   +transition(opacity, .28s, linear, transform, .28s, ease-in)
+  +border-radius($border-radius-base)
 
 .brand-info-touch
   position: relative
@@ -62,14 +68,27 @@
   bottom: 0
   left: 0
   @extend %full-width
-  padding: $padding-large-vertical $padding-large-horizontal
+  padding: 20px
   background-color: $brand-success
+  letter-spacing: normal
+  font-size: $font-size-h5
+  +border-bottom-radius($border-radius-base)
 
 .hero-img
   position: relative
 
-.well
+.social-bar
   @extend %full-width
+  padding: 20px
+  +border-radius($border-radius-base)
+  border: 1px solid #ddd
+
+.social-icons
+  & > li
+    & > a
+      +transition(color, .28s, ease-out)
+      &:hover
+        +transition(color, .28s, ease-in)
 
 @media (max-width: $screen-xs-max)
   .txt-hero
@@ -79,6 +98,15 @@
     font-weight: 400
   .brand-cap
     background-color: $brand-success
+  .social-title
+    text-align: center
+  .social-icons
+    margin-top: 20px
+    text-align: center
+    & > li
+      width: 100%
+      &:not(:last-child)
+        margin-bottom: 10px
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max)
   .brand-dec,

@@ -1,19 +1,19 @@
 
-%section
+%section.section-brands.mb-40
   .container
     .row
-      .col-xs-12.col-sm-4.col-lg-4.mb-30
+      .col-xs-12.col-sm-4.col-lg-4
         .thumbnail
           =link_to 'https://www.bulutfon.com', target: '_blank', class:'text-center brand-offer bulutfon' do
-            =image_tag 'bulutfon-logo.png'
+            =image_tag 'bulutfon-logo.png', class:'mt-20'
             .brand-info
               %h3.brand-info-title.hidden-xs.hidden-sm.hidden-md
                 BULUTFON
               %p.brand-dec
                 Bulutfon ile telefon santrali, faks, sms, görüşmelerin kayıt altına alınması gibi her türlü ihtiyacınızı
                 ₺29/ay gibi fiyatlarla karşılıyoruz.
-              %small.brand-link
-                Icerige goz at
+              %small.brand-link.text-center
+                Paketten Yararlanın
                 %i.fa.fa-angle-double-right
             .caption.brand-cap
               %h3.brand-title
@@ -24,15 +24,15 @@
       .col-xs-12.col-sm-4.col-lg-4
         .thumbnail
           =link_to 'https://hizliceviri.com', target: '_blank', class:'text-center brand-offer hizli-ceviri' do
-            =image_tag 'hizliceviri-logo.png'
+            =image_tag 'hizliceviri-logo.png', class:'mt-20'
             .brand-info
               %h3.brand-info-title.hidden-xs.hidden-sm.hidden-md
                 HIZLIÇEVİRİ
               %p.brand-dec
                 130 dan fazla yeminli tercüman ekibi ile dosyalarınızı online ortamda
                 tercüme eder ve anında size teslim eder.
-              %small.brand-link
-                Icerige goz at
+              %small.brand-link.text-center
+                Paketten Yararlanın
                 %i.fa.fa-angle-double-right
             .caption.brand-cap
               %h3.brand-title
@@ -43,37 +43,42 @@
       .col-xs-12.col-sm-4.col-lg-4
         .thumbnail
           =link_to 'https://www.lawoud.com', target: '_blank', class:'text-center brand-offer lawoud' do
-            =image_tag 'lawoud-logo.png'
+            =image_tag 'lawoud-logo.png', class:'mt-10'
             .brand-info
               %h3.brand-info-title.hidden-xs.hidden-sm.hidden-md
                 LAWOUD
               %p.brand-dec
                 Lawoud ile müvekkillerinize ve borçlularınıza kredi kartı ile ödeme yapma kolaylığı sağlayın.
-              %small.brand-link
-                Icerige goz at
+              %small.brand-link.text-center
+                Paketten Yararlanın
                 %i.fa.fa-angle-double-right
             .caption.brand-cap
               %h3.brand-title
                 2 Ay ücretsiz!
 
-%section
+%section.section-social-bar.mb-40
   .container
     .row
-      .col-xs-12.col-sm-12.col-md-12.col-lg-12.mb-30
-        .well
+      .col-xs-12.col-sm-12.col-md-12.col-lg-12
+        .social-bar
           .col-xs-12.col-md-6.col-lg-6
-            %h3 Bu sayfayı arkadaşlarınızla paylaşın
+            %h3.social-title
+              Bu sayfayı arkadaşlarınızla paylaşın
           .col-lg-2.col-md-2.hidden-xs
             -4.times do
               %i.fa.fa-angle-right.fa-4x
           .col-xs-12.col-md-4.col-lg-4
-            .social-icons
-              =link_to 'http://twitter.com/home?status=Avukatlara Ozel Paket+http://avukatlara.ozelpaket.net', target:'_blank' do
-                %i.fa.fa-twitter-square.fa-4x
-              =link_to 'https://www.facebook.com/sharer/sharer.php?u=http://avukatlara.ozelpaket.net', target:'_blank' do
-                %i.fa.fa-facebook-square.fa-4x
-              =link_to 'http://www.linkedin.com/shareArticle?mini=true&url=http://avukatlara.ozelpaket.net/&title=Avukatlara Ozel Paket&source=http://avukatlara.ozelpaket.net/', target:'_blank' do
-                %i.fa.fa-linkedin-square.fa-4x
-              =link_to 'mailto:arkadasinizin@email-adresi.com?subject=Avukatlara Ozel Paket', target:'_blank' do
-                %i.fa.fa-envelope-square.fa-4x
+            %ul.list-inline.social-icons
+              %li
+                %a.twitter-share-button{'data-lang' => 'tr', 'data-related' => 'Bulutfon', 'data-text' => 'Avukatlara Ozel Paket', 'data-url' => 'http://avukatlara.ozelpaket.net', 'data-via' => 'Bulutfon', :href => 'https://twitter.com/share'} Tweet
+                :javascript
+                  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+              %li
+                .fb-share-button{'data-href' => 'http://avukatlara.ozelpaket.net', 'data-layout' => 'box_count'}
+              %li.pt-5
+                %script{:src => '//platform.linkedin.com/in.js', :type => 'text/javascript'} lang: tr_TR
+                %script{'data-counter' => 'top', 'data-url' => 'http://avukatlara.ozelpaket.net/', :type => 'IN/Share'}
+              %li
+                =link_to 'mailto:arkadasinizin@email-adresi.com?subject=Avukatlara Ozel Paket', target:'_blank' do
+                  %i.fa.fa-envelope-square.fa-4x
 
