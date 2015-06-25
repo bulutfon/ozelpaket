@@ -2,6 +2,8 @@
 
 ## TODO
 
+* [ ] https://github.com/bulutfon/ozelpaket/issues/10
+
 ## DONE
 
 * [x] https://github.com/bulutfon/ozelpaket/issues/4
