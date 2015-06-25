@@ -2,7 +2,7 @@
 
 ## TODO
 
-* [ ] https://github.com/bulutfon/ozelpaket/issues/10
+That's all folks 
 
 ## DONE
 
@@ -11,6 +11,7 @@
 * [x] https://github.com/bulutfon/ozelpaket/issues/1
 * [x] https://github.com/bulutfon/ozelpaket/issues/3
 * [x] https://github.com/bulutfon/ozelpaket/issues/5
+* [x] https://github.com/bulutfon/ozelpaket/issues/10
 
 # İletişim
 
