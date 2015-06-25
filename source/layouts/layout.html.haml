@@ -1,5 +1,5 @@
 !!!
-%html
+%html{prefix: 'og: http://ogp.me/ns#'}
   %head
     %meta{charset: 'utf-8'}/
     %meta{content: 'IE=edge,chrome=1', 'http-equiv' => 'X-UA-Compatible'}/
@@ -9,11 +9,21 @@
 
     %title= current_page.data.title || 'Özel Paket'
 
+    //Open Graph Tags
+    %meta{content: 'Avukatlara Ozel Paket', property: 'og:title'}/
+    %meta{content: 'article', property: 'og:type'}/
+    %meta{content: 'http://avukatlara.ozelpaket.net/assets/images/avukatlara-ozel-paket.png', property: 'og:image'}/
+    %meta{content: 'http://avukatlara.ozelpaket.net/', property: 'og:url'}/
+    %meta{content: 'Yaklaşık ₺400 değerinde indirim paketiyle, teknolojinin rahatlıyla tanışın.', property: 'og:description'}/
+
+    //Twitter Open Graph Tag
+    %meta{content: '@Bulutfon', name: 'twitter:site'}/
+
     = stylesheet_link_tag 'application',
                           '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css',
                           '//fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,500,700,900'
 
-    %link{rel:'icon', href:'favicon.ico', type:'image/x-icon'}/
+    %link{rel:'icon', href:'favicon.png', type:'image/x-icon'}/
 
     =javascript_include_tag 'vendor/modernizr-2.8.3.min.js'
 
