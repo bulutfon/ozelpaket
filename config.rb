@@ -32,6 +32,14 @@ page '/*.txt', layout: false
 #   end
 # end
 
+# Server Environment
+configure :server do
+
+  # Debug assets
+  set :debug_assets, true
+
+end
+
 # Development Environment
 configure :development do
 
@@ -57,8 +65,6 @@ end
 configure :build do
   # Minify CSS on build
   activate :minify_css
-
-  activate :relative_assets
 
   # Minify Javascript on build
   # activate :minify_javascript
