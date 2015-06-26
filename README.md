@@ -2,7 +2,7 @@
 
 ## TODO
 
-That's all folks 
+* [ ] https://github.com/bulutfon/ozelpaket/issues/11
 
 ## DONE
 
