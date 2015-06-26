@@ -1,3 +1,6 @@
+//Import Retina JS
+//= require vendor/retina.min
+
 // Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;
