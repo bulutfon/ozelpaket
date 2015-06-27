@@ -16,19 +16,13 @@
     %meta{content: "Yaklaşık 400TL değerinde indirim paketiyle, teknolojinin rahatlıyla tanışın.", property: "og:description"}/
     %meta{content: "http://avukatlara.ozelpaket.net/assets/images/avukatlara-ozel-paket.png", property: "og:image"}/
 
-    %meta{content: 'Avukatlara Özel Teknoloji Paketi', property: 'og:title'}/
-    %meta{content: 'article', property: 'og:type'}/
-    %meta{content: 'http://avukatlara.ozelpaket.net/assets/images/avukatlara-ozel-paket.png', property: 'og:image'}/
-    %meta{content: 'http://avukatlara.ozelpaket.net/', property: 'og:url'}/
-    %meta{content: 'Yaklaşık 400TL değerinde indirim paketiyle, teknolojinin rahatlıyla tanışın.', property: 'og:description'}/
-
     //Twitter Open Graph Tag
     %meta{content: '@Bulutfon', name: 'twitter:site'}/
 
     = stylesheet_link_tag 'application',
                           '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css',
-                          '//fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,500,700,900'
-
+                          '//fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,500,700,900&subset=latin,latin-ext'
+                          
     %link{rel:'icon', href:'favicon.png', type:'image/x-icon'}/
 
     = yield_content :head
