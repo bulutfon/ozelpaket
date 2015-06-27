@@ -2,11 +2,12 @@
 
 ## TODO
 
-* [ ] https://github.com/bulutfon/ozelpaket/issues/11
-* [ ] https://github.com/bulutfon/ozelpaket/issues/1 
+* [ ] https://github.com/bulutfon/ozelpaket/issues/12
 
 ## DONE
 
+* [x] https://github.com/bulutfon/ozelpaket/issues/11
+* [x] https://github.com/bulutfon/ozelpaket/issues/1 
 * [x] https://github.com/bulutfon/ozelpaket/issues/4
 * [x] https://github.com/bulutfon/ozelpaket/issues/2
 * [x] https://github.com/bulutfon/ozelpaket/issues/3
