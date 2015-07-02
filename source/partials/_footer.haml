@@ -6,7 +6,14 @@
         %h4 400TL değerinde indirim paketiyle, teknolojinin rahatlıyla tanışın.
         %small
           &copy; 2015 - www.ozelpaket.com
-//Facebook
+/
+= javascript_include_tag  '//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js',
+                          'application'
+:javascript
+    //Fallback to loading jQuery from a local path if the CDN is unavailable
+    window.jQuery || document.write('<script src="assets/javascripts/vendor/jquery-2.1.3.min.js"><\/script>')
+
+/Facebook
 #fb-root
 :javascript
   (function(d, s, id) {
@@ -16,6 +23,18 @@
     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
+
+/ Facebook Pixel Code
+:javascript
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','//connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '549301298539348');
+  fbq('track', 'PageView');
+  %noscript
+    %img{height: "1", src: "https://www.facebook.com/tr?id=549301298539348&ev=PageView&noscript=1", style: "display:none", width: "1"}/
 
 //Gplus
 %script{async: '', defer: '', src: 'https://apis.google.com/js/platform.js'} {lang: 'tr'}
@@ -32,11 +51,5 @@
   e.src='https://www.google-analytics.com/analytics.js';
   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
   ga('create','UA-64397061-1','auto');ga('send','pageview');
-
-= javascript_include_tag  '//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js',
-                          'application'
-:javascript
-    //Fallback to loading jQuery from a local path if the CDN is unavailable
-    window.jQuery || document.write('<script src="assets/javascripts/vendor/jquery-2.1.3.min.js"><\/script>')
 
 = yield_content :foot
