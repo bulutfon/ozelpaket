@@ -4,6 +4,7 @@
 
 ## DONE
 
+* [x] https://github.com/bulutfon/ozelpaket/issues/13
 * [x] https://github.com/bulutfon/ozelpaket/issues/12
 * [x] https://github.com/bulutfon/ozelpaket/issues/11
 * [x] https://github.com/bulutfon/ozelpaket/issues/1 
